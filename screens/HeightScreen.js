@@ -1,13 +1,26 @@
-// screens/HeightScreen.js
-// import React from 'react';
-// import { View, Text } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-// const HeightScreen = () => {
-//   return (
-//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-//       <Text>Height Screen</Text>
-//     </View>
-//   );
-// };
+const HeightScreen = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Height Conversion Screen</Text>
+    </View>
+  );
+};
 
-// export default HeightScreen;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f9e79f',
+  },
+  text: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+});
+
+export default HeightScreen;
